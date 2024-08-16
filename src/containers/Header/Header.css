@@ -1,0 +1,41 @@
+.app__header {
+    position: relative;
+}
+
+.app__header-h1 {
+    font-family: var(--font-base);
+    color: var(--color-white);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 117px;
+    font-size: 128px;
+    text-align: center;
+    margin: 0 50px 0 50px ;
+    
+}
+
+.app__header-h2 {
+    font-family: var(--font-base);
+    color: var(--color-white);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 60px;
+    font-size: 72px;
+    text-align: center;
+}
+
+.app__header-position {
+    padding: 1rem 1rem;
+    margin: 15px 50px 0 50px;
+    background-color: var(--color-white);
+}
+
+.app__header-position h2 {
+    font-family: var(--font-base);
+    color: var(--color-orange);
+    letter-spacing: 0;
+    text-transform: uppercase;
+    line-height: 60px;
+    font-size: 62px;
+    text-align: center;
+}

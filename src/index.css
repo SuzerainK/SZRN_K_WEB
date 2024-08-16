@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One:wght@300;400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Saira+Condensed:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-base: 'Saira Condensed', serif;
+  --font-alt: 'Comfortaa', sans-serif;
+
+  --color-white: #F3F0F0;
+  --color-orange: #CF852D;
+  --color-black: #2D2D2D;
+  --color-brown: #69483F;
+  --color-grey: #AAAAAA;
+  --color-deep-orange: #BC5615;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}

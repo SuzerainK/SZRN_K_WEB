@@ -1,0 +1,67 @@
+.app__skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.app__skills-title {
+    width: 100%;
+    text-align: center;
+    background: var(--color-orange);
+
+    margin-bottom: 5rem;
+
+    
+    
+}
+
+.app__skills-title h2 {
+    font-family: var(--font-base);
+    font-size: 3rem;
+    color: var(--color-black);
+    letter-spacing: .03em;
+}
+
+/*Below are style properties of the boxes*/
+.app__skills-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.app__skills-container_column {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+@media screen and (max-width: 1550px) {
+    .app__skills-title {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .app__skills-container {
+        flex-direction: column-reverse;
+    }
+
+    .app__skills-container_column {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+
+    .app__skills-title h2 {
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .app__skills-title h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+}

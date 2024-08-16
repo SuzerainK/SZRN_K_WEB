@@ -1,0 +1,106 @@
+.app__skills-container_skills {
+    width: 100%;
+    height: 100%;
+    max-height: 20vh;
+
+    display: flex;
+    flex-direction: row;
+    background: var(--color-black);
+}
+
+.app__skills-container_skills-bar {
+    width: 1%;
+    height: 100%;
+    max-height: 20vh;
+    padding-left: 1rem;
+    background: var(--color-orange);
+
+    
+}
+
+.app__skills-container_skills-image {
+    width: 100%;
+    height: 100%;
+    max-width: 15rem;
+    padding: 2rem;
+
+    background: var(--color-black);
+    
+}
+
+.app__skills-container_skills-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.app__skills-container_skills-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 1rem 1.5rem 1rem 0;
+    height: 100%;
+}
+
+.app__skills-container_skills-content p {
+    font-family: var(--font-alt);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: var(--color-white);
+}
+
+.app__skills-container_skills-content h3 {
+    font-family: var(--font-alt);
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2em;
+    color: var(--color-white);
+    text-transform: uppercase;
+
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 2000px) {
+    .app__skills-container_skills-bar {
+        width: 5%;
+    }
+
+    .app__skills-container_skills-content p {
+        font-size: 1.25rem;
+        font-weight: 100;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .app__skills-container_skills-content h3 {
+        font-size: 1.25rem;
+        line-height: 2em;
+    }
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .app__skills-container_skills-content h3 {
+        font-size: 1.25rem;
+        line-height: 1em;
+    }
+
+    .app__skills-container_skills-content p {
+        font-size: 1em;
+        font-weight: 100;
+        line-height: 1em;
+
+        margin-bottom: 1em;
+    }
+    
+}
+
+@media screen and (max-width: 360px) {
+    .app__skills-container_skills-content p {
+        font-size: .75em;
+    }
+}
