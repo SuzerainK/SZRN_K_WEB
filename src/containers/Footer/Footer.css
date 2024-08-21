@@ -33,23 +33,41 @@
     justify-content: space-between;
 }
 
-.app__footer-links_email {
+.app__footer-links_contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.app__footer-links_contact p {
+    font-family: var(--font-alt);
+    font-size: 1rem;
+    color: var(--color-white);
+
+    cursor: pointer;
+}
+
+.app__footer-links_contact-email {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
 }
 
-.app__footer-links_email img {
+.app__footer-links_contact-email img {
     max-width: 3em;
     object-fit: contain;
     margin: 0 2rem 0 5rem;
 }
 
-.app__footer-links_email p {
+.app__footer-links_contact-email p {
     font-family: var(--font-alt);
     font-size: 1rem;
     color: var(--color-white);
+
+    margin-right: 3rem;
+    padding-right: 3rem;
+    border-right: 1px solid var(--color-white);
 
     cursor: pointer;
 }
@@ -75,3 +93,66 @@
     margin-right: 5rem;
 }
 
+@media screen and (min-width: 2400px) {
+    
+}
+
+@media screen and (max-width: 1280px) {
+    .app__footer-text {
+        margin: 5rem 0 5rem 0;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .app__footer-links_contact-email p {
+        font-size: 1em;
+    }
+
+    .app__footer-links_icons img {
+        width: 1.5em;
+    }
+
+    .app__footer-links_contact-email img {
+        margin: 2rem 1rem 2rem 0;
+        max-width: 2em;
+    }
+
+    .app__footer-links_icons img:nth-child(3) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .app__footer-text {
+        margin: 5rem 0 5rem 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .app__footer-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .app__footer-links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .app__footer-links_contact {
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    .app__footer-links_contact-email p {
+        padding-right: 0;
+        margin-right: 0;
+        border-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    
+}

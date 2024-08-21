@@ -6,19 +6,17 @@
 .app__skills-title {
     width: 100%;
     text-align: center;
-    background: var(--color-orange);
+    background: var(--color-white);
+    border: 1.5px solid var(--color-orange);
 
     margin-bottom: 5rem;
-
-    
-    
 }
 
 .app__skills-title h2 {
     font-family: var(--font-base);
     font-size: 3rem;
-    color: var(--color-black);
-    letter-spacing: .03em;
+    color: var(--color-orange);
+    letter-spacing: -0.03em;
 }
 
 /*Below are style properties of the boxes*/

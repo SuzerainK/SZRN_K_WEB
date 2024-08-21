@@ -5,6 +5,7 @@
 
     display: flex;
     flex-direction: row;
+    border: 1px solid var(--color-orange);
     background: var(--color-black);
 }
 
@@ -19,10 +20,12 @@
 }
 
 .app__skills-container_skills-image {
+    display: flex;
     width: 100%;
     height: 100%;
     max-width: 15rem;
-    padding: 2rem;
+    padding: 1em;
+    flex: 0 0 30%;
 
     background: var(--color-black);
     
@@ -36,6 +39,7 @@
 
 .app__skills-container_skills-content {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-between;
 
@@ -45,8 +49,8 @@
 
 .app__skills-container_skills-content p {
     font-family: var(--font-alt);
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 1.25em;
+    font-weight: 100;
     line-height: 2rem;
     color: var(--color-white);
 }
@@ -69,19 +73,23 @@
     }
 
     .app__skills-container_skills-content p {
-        font-size: 1.25rem;
+        font-size: 1.25em;
         font-weight: 100;
     }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1700px) {
     .app__skills-container_skills-content h3 {
         font-size: 1.25rem;
-        line-height: 2em;
+        line-height: 1.25em;
+    }
+
+    .app__skills-container_skills-content p {
+        font-size: 1em;
+        line-height: 1em;
+        font-weight: 100;
     }
 }
-
-
 
 @media screen and (max-width: 550px) {
     .app__skills-container_skills-content h3 {
@@ -99,8 +107,8 @@
     
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 390px) {
     .app__skills-container_skills-content p {
-        font-size: .75em;
+        font-size: 1em;
     }
 }

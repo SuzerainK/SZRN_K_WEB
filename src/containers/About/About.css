@@ -6,32 +6,36 @@
 }
 
 .app__about-card {
-
     display: flex;
     flex-direction: row;
-    margin: 20rem 20rem 20rem 0;
+    margin: 20rem 10vw 20rem 10vw;
+
+    border-right: 1rem solid var(--color-orange);
 }
 
 .app__about-profile {
     display: flex;
-    align-items: flex-end;
+    flex: 0 0 20%;
+    align-items: center;
     justify-content: flex-end;
-    width: 60vw;
     height: 100%;
 
     padding-right: 1rem;
-    margin-left: 10vw;
+}
 
-    
+.app__about-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .app__about-contents {
     display: flex;
+    flex: 1;
     flex-direction: column;
     margin-right: 10vw;
     justify-content: flex-start;
 
-    border-right: 1rem solid var(--color-orange);
 }
 
 .app__about-contents h1 {
@@ -53,8 +57,101 @@
 .app__about-contents p {
     font-family: var(--font-alt);
     color: var(--color-brown);
-    font-size: 1.5em;
+    font-size: 1.25em;
+    text-align: justify;
+    text-justify: auto;
 
     margin-bottom: 2rem;
+
+}
+
+
+@media screen and (min-width: 2000px){
+    
+}
+
+@media screen and (max-width: 1550px){
+    .app__about-card {
+        margin: 0;
+    }
+
+    .app__about-contents h1 {
+        margin-top: 8vh;
+        font-size: 4em;
+    }
+
+    .app__about-contents h2 {
+        font-size: 3.5em;
+    }
+
+    .app__about-contents p {
+        font-size: 1em;
+        
+    }
+
+    .app__about-contents {
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 1280px){
+
+    .app__about-card{
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .app__about-profile {
+        flex: 0 0 25%;
+        height: 60vh;
+        margin-left: 0;
+        
+    }
+
+
+    .app__about-contents {
+        margin: 0;
+    }
+
+    .app__about-contents p {
+        font-size: 1em;
+    }
+
+    .app__about-contents h1 {
+        font-size: 3em;
+    }
+
+    .app__about-contents h2 {
+        font-size: 2.75em;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .app__about-profile {
+        max-height: max-content;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .app__about-card {
+        flex-direction: column;
+    }
+    
+    .app__about-profile {
+        margin: 0 0 2rem 0;
+        padding-left: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .app__about-contents {
+        padding-right: 1rem;
+    }
+
+    .app__about-contents p {
+        text-align: justify;
+        text-justify: auto;
+    }
 }
 

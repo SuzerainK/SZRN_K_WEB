@@ -15,6 +15,9 @@ export { default as facebooklogo } from '../assets/facebook_logo.png.png';
 export { default as xlogo } from '../assets/x_logo.png';
 export { default as discordlogo } from '../assets/discord_logo.png';
 export { default as linkedinlogo } from '../assets/linkedin_logo.png';
+export { default as cspaintlogo } from '../assets/clip_studio_logo.png';
+export { default as mvstudiologo } from '../assets/mvstudio_logo.png';
+export { default as vscodelogo } from '../assets/vscode_logo.png';
 
 //Works
 export { default as works01 } from '../assets/works0.png';
